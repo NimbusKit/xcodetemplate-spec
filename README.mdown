@@ -42,5 +42,5 @@ Template Variables
 
 | Key        | Description |
 |:---------- |:----------- |
-| ___PACKAGENAME___ | The name provided by the user via the `productName` Option.
-| ___PACKAGENAMEASIDENTIFIER___ | ___PACKAGENAME___ sanitized in some way.
+| `___PACKAGENAME___` | The name provided by the user via the `productName` Option.
+| `___PACKAGENAMEASIDENTIFIER___` | `___PACKAGENAME___` sanitized in some way.
