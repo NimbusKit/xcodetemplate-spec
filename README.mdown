@@ -19,7 +19,7 @@ Each element in an options node is a `<dict>` that may have the following fields
 
 | Key        | Type   | Description | Example  |
 |:---------- |:-------|:----------- |:-------- |
-| Identifier | string | The unique identifier for this UI element. There is a [list of built-in option identifiers](#optionidentifiers) that Xcode uses. | `<string>productName</string>`
+| Identifier | string | The unique identifier for this UI element. There is a [list of built-in option identifiers](#option[identifiers) that Xcode uses. | `<string>productName</string>`
 | Required | bool | Whether or not the user must fill in this field. | `<true/>`
 | Name | string | The displayed label identifying this field in the UI. | `<string>Product Name</string>`
 | NotPersisted | bool | If true, the field will not be persisted between creating new files/projects. | `<true/>`
@@ -31,11 +31,11 @@ Each element in an options node is a `<dict>` that may have the following fields
 
 | Key        | Description | Usage |
 |:---------- |:----------- |:----- |
-| productName | The name of the new application/framework/library. | ___PACKAGENAME___
-| bundleIdentifierPrefix | The bundle identifier prefix. | ___VARIABLE_bundleIdentifierPrefix:bundleIdentifier___
-| organizationName | The organization name. | ___ORGANIZATIONNAME___
+| productName | The name of the new application/framework/library. | `___PACKAGENAME___`
+| bundleIdentifierPrefix | The bundle identifier prefix. | `___VARIABLE_bundleIdentifierPrefix:bundleIdentifier___`
+| organizationName | The organization name. | `___ORGANIZATIONNAME___`
 | bundleIdentifier | An automatically created bundle identifier based on the bundleIdentifierPrefix and product name. | 
-| classPrefix | A prefix to be used when creating new classes. | ___VARIABLE_classPrefix:identifier___
+| classPrefix | A prefix to be used when creating new classes. | `___VARIABLE_classPrefix:identifier___`
 
 Template Variables
 ------------------
