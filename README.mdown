@@ -7,3 +7,12 @@ Top-Level Nodes
 | Key        | Type   | Description | Example  |
 |:---------- |:-------|:----------- |:-------- |
 | Identifier | string | The unique identifier by which you can refer to a given template. | com.nimbuskit.template.nimbuskitBase
+| Kind | string | The kind of template this is. Always seems to be Xcode.Xcode3.ProjectTemplateUnitKind. | Xcode.Xcode3.ProjectTemplateUnitKind
+| Options | array | An array of dictionaries specifying UI options for configuring the project. | [#Options][Options]
+
+
+<a name="Options"/>
+Options
+-------
+
+
