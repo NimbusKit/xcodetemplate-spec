@@ -27,6 +27,16 @@ Each element in an options node is a `<dict>` that may have the following fields
 | EmptyReplacement | string | Effectively a default, but not meant to actually be used. Generally paired with Required being `true`. | `<string>ProductName</string>`
 | Type | string | What kind of element this field should be. | `<string>text</string>`, `<string>static</string>`
 
+### Option Identifiers
+
+| Key        | Description | Usage |
+|:---------- |:----------- |:----- |
+| productName | The name of the new application/framework/library. | `___PACKAGENAME___`
+| bundleIdentifierPrefix | The bundle identifier prefix. | `___VARIABLE_bundleIdentifierPrefix:bundleIdentifier___`
+| organizationName | The organization name. | `___ORGANIZATIONNAME___`
+| bundleIdentifier | An automatically created bundle identifier based on the bundleIdentifierPrefix and product name. | 
+| classPrefix | A prefix to be used when creating new classes. | `___VARIABLE_classPrefix:identifier___`
+
 ### Option Examples
 
 ![alt text](https://github.com/NimbusKit/xcodetemplate-spec/raw/master/gfx/options/productName.png "productName")
@@ -48,17 +58,22 @@ Each element in an options node is a `<dict>` that may have the following fields
 		<string>text</string>
 	</dict>
 
+![alt text](https://github.com/NimbusKit/xcodetemplate-spec/raw/master/gfx/options/bundleIdentifier.png "bundleIdentifier")
 
-
-### Option Identifiers
-
-| Key        | Description | Usage |
-|:---------- |:----------- |:----- |
-| productName | The name of the new application/framework/library. | `___PACKAGENAME___`
-| bundleIdentifierPrefix | The bundle identifier prefix. | `___VARIABLE_bundleIdentifierPrefix:bundleIdentifier___`
-| organizationName | The organization name. | `___ORGANIZATIONNAME___`
-| bundleIdentifier | An automatically created bundle identifier based on the bundleIdentifierPrefix and product name. | 
-| classPrefix | A prefix to be used when creating new classes. | `___VARIABLE_classPrefix:identifier___`
+	<dict>
+		<key>Identifier</key>
+		<string>bundleIdentifier</string>
+		<key>Name</key>
+		<string>Bundle Identifier</string>
+		<key>NotPersisted</key>
+		<true/>
+		<key>Description</key>
+		<string>Your new product&apos;s bundle identifier</string>
+		<key>Default</key>
+		<string>com.nimbuskit.___VARIABLE_productName:RFC1034Identifier___</string>
+		<key>Type</key>
+		<string>static</string>
+	</dict>
 
 Template Variables
 ------------------
