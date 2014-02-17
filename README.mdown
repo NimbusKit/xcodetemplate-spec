@@ -6,7 +6,8 @@ with (see [iOS-Framework](https://github.com/jverkoey/iOS-Framework)). This doc 
 to bring some sanity to the process.
 
 This document is a WIP and may never be finished. This file is the result of building the
-[Xcode templates for NimbusKit](https://github.com/NimbusKit/xcode-templates).
+[Xcode templates for NimbusKit](https://github.com/NimbusKit/xcode-templates) and is mostly
+being used as a reference as those templates are being built.
 
 Finding the Xcode Templates Directories
 ---------------------------------------
