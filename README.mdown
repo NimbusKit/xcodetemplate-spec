@@ -74,7 +74,7 @@ Each element in an options node is a `<dict>` that may have the following fields
 		<key>Description</key>
 		<string>Your new product&apos;s bundle identifier</string>
 		<key>Default</key>
-		<string>com.nimbuskit.___VARIABLE_productName:RFC1034Identifier___</string>
+		<string>___VARIABLE_bundleIdentifierPrefix:bundleIdentifier___.___VARIABLE_productName:RFC1034Identifier___</string>
 		<key>Type</key>
 		<string>static</string>
 	</dict>
