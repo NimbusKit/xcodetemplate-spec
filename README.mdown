@@ -39,6 +39,8 @@ Each element in an options node is a `<dict>` that may have the following fields
 
 ### Option Examples
 
+#### Text Field
+
 ![alt text](https://github.com/NimbusKit/xcodetemplate-spec/raw/master/gfx/options/productName.png "productName")
 
 	<dict>
@@ -57,6 +59,8 @@ Each element in an options node is a `<dict>` that may have the following fields
 		<key>Type</key>
 		<string>text</string>
 	</dict>
+
+#### Static Label
 
 ![alt text](https://github.com/NimbusKit/xcodetemplate-spec/raw/master/gfx/options/bundleIdentifier.png "bundleIdentifier")
 
