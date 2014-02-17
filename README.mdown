@@ -8,9 +8,18 @@ Finding the Xcode Templates Directories
 
 There are three directories you'll want to care about when building Xcode templates:
 
-- Objective-C and Mac templates: `open "$(xcode-select -p)Library/Xcode/Templates"`
-- iPhone templates: `open "$(xcode-select -p)Platforms/iPhoneOS.platform/Developer/Library/Xcode/Templates"`
-- User templates (where yours will go): `open $HOME/Library/Developer/Xcode/Templates` (may need to `mkdir -p $HOME/Library/Developer/Xcode/Templates` first).
+### Objective-C and Mac templates
+
+	open "$(xcode-select -p)Library/Xcode/Templates"
+
+### iPhone templates
+
+	open "$(xcode-select -p)Platforms/iPhoneOS.platform/Developer/Library/Xcode/Templates"
+
+### User templates (where yours will go)
+
+	mkdir -p $HOME/Library/Developer/Xcode/Templates
+	open $HOME/Library/Developer/Xcode/Templates
 
 Top-Level Nodes
 ---------------
