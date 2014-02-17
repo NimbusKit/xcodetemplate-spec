@@ -21,6 +21,11 @@ There are three directories you'll want to care about when building Xcode templa
 	mkdir -p $HOME/Library/Developer/Xcode/Templates
 	open $HOME/Library/Developer/Xcode/Templates
 
+How to Create a Template
+------------------------
+
+The easiest way to create a new template is to clone one of the existing Apple ones and hack away at it.
+
 Top-Level Nodes
 ---------------
 
@@ -29,6 +34,7 @@ Top-Level Nodes
 | Identifier | string | The unique identifier by which you can refer to a given template. | com.nimbuskit.template.nimbuskitBase
 | Kind | string | The kind of template this is. Always seems to be Xcode.Xcode3.ProjectTemplateUnitKind. | Xcode.Xcode3.ProjectTemplateUnitKind
 | Options | array | An array of dictionaries specifying UI options for configuring the project. | [Options](#options)
+| Ancestors | array | An array of strings specifying template Identifiers that this template should inherit from. | `<string>com.apple.dt.unit.bundleBase</string>`
 
 Options
 -------
@@ -104,3 +110,20 @@ Template Variables
 |:---------- |:----------- |
 | `___PACKAGENAME___` | The name provided by the user via the `productName` option.
 | `___PACKAGENAMEASIDENTIFIER___` | `___PACKAGENAME___` sanitized in some way.
+
+Existing Templates
+------------------
+
+| Identifier | Description |
+|:---------- |:----------- |
+| com.apple.dt.unit.base | The root template for Objective-C projects. Defines standard UI fields (productName, rganizationName, bundleIdentifierPrefix, and bundleIdentifier). Defines the precompiled header. Specifies a Debug and Release build.
+| com.apple.dt.unit.bundleBase | Defines the necessary fields for building a bundle (unit testing or application).
+| com.apple.dt.unit.objectiveCApplication | Defines the .m file and standard resources for an Objective-C application.
+
+### Inheritance Tree
+
+| com.apple.dt.unit.base | The root template for Objective-C projects. Defines standard UI fields (productName, rganizationName, bundleIdentifierPrefix, and bundleIdentifier). Defines the precompiled header. Specifies a Debug and Release build.
+| com.apple.dt.unit.bundleBase | Defines the necessary fields for building a bundle (unit testing or application).
+| com.apple.dt.unit.objectiveCApplication | Defines the .m file and standard resources for an Objective-C application.
+
+
