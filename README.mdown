@@ -5,5 +5,5 @@ Top-Level Nodes
 ---------------
 
 | Key        | Type   | Description | Example  |
-| ---------- |:------:|:-----------:|:---------|
+|:---------- |:-------|:----------- |:-------- |
 | Identifier | string | The unique identifier by which you can refer to a given template. | com.nimbuskit.template.nimbuskitBase
