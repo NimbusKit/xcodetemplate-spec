@@ -19,13 +19,36 @@ Each element in an options node is a `<dict>` that may have the following fields
 
 | Key        | Type   | Description | Example  |
 |:---------- |:-------|:----------- |:-------- |
-| Identifier | string | The unique identifier for this UI element. There is a [list of built-in option identifiers](#option[identifiers) that Xcode uses. | `<string>productName</string>`
+| Identifier | string | The unique identifier for this UI element. There is a [list of built-in option identifiers](#option-identifiers) that Xcode uses. | `<string>productName</string>`
 | Required | bool | Whether or not the user must fill in this field. | `<true/>`
 | Name | string | The displayed label identifying this field in the UI. | `<string>Product Name</string>`
 | NotPersisted | bool | If true, the field will not be persisted between creating new files/projects. | `<true/>`
 | Description | string | The alt-text for the field, made visible by hovering over the field's label. | `<string>Your new product&apos;s name</string>`
 | EmptyReplacement | string | Effectively a default, but not meant to actually be used. Generally paired with Required being `true`. | `<string>ProductName</string>`
 | Type | string | What kind of element this field should be. | `<string>text</string>`, `<string>static</string>`
+
+### Option Examples
+
+![alt text](https://github.com/NimbusKit/xcodetemplate-spec/raw/master/gfx/options/productName.png "productName")
+
+	<dict>
+		<key>Identifier</key>
+		<string>productName</string>
+		<key>Required</key>
+		<true/>
+		<key>Name</key>
+		<string>Product Name</string>
+		<key>NotPersisted</key>
+		<true/>
+		<key>Description</key>
+		<string>Your new product&apos;s name</string>
+		<key>EmptyReplacement</key>
+		<string>ProductName</string>
+		<key>Type</key>
+		<string>text</string>
+	</dict>
+
+
 
 ### Option Identifiers
 
