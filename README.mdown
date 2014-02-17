@@ -122,8 +122,6 @@ Existing Templates
 
 ### Inheritance Tree
 
-| com.apple.dt.unit.base | The root template for Objective-C projects. Defines standard UI fields (productName, rganizationName, bundleIdentifierPrefix, and bundleIdentifier). Defines the precompiled header. Specifies a Debug and Release build.
-| com.apple.dt.unit.bundleBase | Defines the necessary fields for building a bundle (unit testing or application).
-| com.apple.dt.unit.objectiveCApplication | Defines the .m file and standard resources for an Objective-C application.
-
-
+- com.apple.dt.unit.base
+	- com.apple.dt.unit.bundleBase
+		- com.apple.dt.unit.objectiveCApplication
