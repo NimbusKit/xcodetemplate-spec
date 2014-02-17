@@ -3,6 +3,15 @@ xcodetemplate spec
 
 xcodetemplates are another area of Objective-C development that are a complete bitch to work with. This doc is an attempt to bring some sanity to the process.
 
+Finding the Xcode Templates Directories
+---------------------------------------
+
+There are three directories you'll want to care about when building Xcode templates:
+
+- Objective-C and Mac templates: `open "$(xcode-select -p)Library/Xcode/Templates"`
+- iPhone templates: `open "$(xcode-select -p)Platforms/iPhoneOS.platform/Developer/Library/Xcode/Templates"`
+- User templates (where yours will go): `open $HOME/Library/Developer/Xcode/Templates` (may need to `mkdir -p $HOME/Library/Developer/Xcode/Templates` first).
+
 Top-Level Nodes
 ---------------
 
@@ -84,5 +93,5 @@ Template Variables
 
 | Key        | Description |
 |:---------- |:----------- |
-| `___PACKAGENAME___` | The name provided by the user via the `productName` Option.
+| `___PACKAGENAME___` | The name provided by the user via the `productName` option.
 | `___PACKAGENAMEASIDENTIFIER___` | `___PACKAGENAME___` sanitized in some way.
