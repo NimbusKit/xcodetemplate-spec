@@ -2,7 +2,7 @@ xcodetemplate spec
 ==================
 
 xcodetemplates are another area of Objective-C development that are a complete bitch to work
-with (see [iOS-Framework](https://github.com/jverkoey/iOS-Framework). This doc is an attempt
+with (see [iOS-Framework](https://github.com/jverkoey/iOS-Framework)). This doc is an attempt
 to bring some sanity to the process.
 
 This document is a WIP and may never be finished. This file is the result of building the
