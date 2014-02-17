@@ -128,7 +128,7 @@ These templates are inherited from but can not be created themselves.
 |:---------- |:----------- |
 | com.apple.dt.unit.base | The root template for Objective-C projects. Defines standard UI fields (productName, rganizationName, bundleIdentifierPrefix, and bundleIdentifier). Defines the precompiled header. Specifies a Debug and Release build.
 | com.apple.dt.unit.bundleBase | Defines the necessary fields for building a bundle (unit testing or application).
-| com.apple.dt.unit.objectiveCApplication | Defines the .m file and standard resources for an Objective-C application.
+| com.apple.dt.unit.objectiveCApplication | Defines the main.m file and standard resources for an Objective-C application.
 | com.apple.dt.unit.objectiveCUnitTestBundle | Provides UI for determining which unit testing feature to use (XCTest or OCUnit). Provides an empty unit test class implementation.
 | com.apple.dt.unit.prefixable | Defines UI for specifying a class prefix.
 | com.apple.dt.unit.iPhoneBase | Requires the iphoneos SDK and provides default supported orientations in the project's Info.plist.
